@@ -1,0 +1,47 @@
+" set ts=8 sts=4 sw=4 noet
+" set ts=2 sw=2 et
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent  " ai:  indent to match previous line
+"set cindent  " cin:  Use C-indenting
+"set cinkeys=0{,0},!^F,o,O,e  " cink:  Perl-friendly reindent keys
+"set cinoptions=t0,+4,(0,)60,u0,*100  " cino:  all sorts of options
+"set cinwords=if,else,while,do,for,elsif,sub
+set comments=n:#  " com:  Perlish comments
+set formatoptions=crql  " fo:  word wrap, format comments
+set nosmartindent  " nosi:  Smart indent useless when C-indent is on
+set showmatch  " show matches on parens, bracketc, etc. 
+set wh=999
+syntax on
+set vb
+
+" Add a Ctrl+Tab mapping for keyword completion
+inoremap <c-tab> <c-p>
+" inoremap <c-s> :w
+
+" colors desert
+" hi Normal guibg=black
+
+"set directory=~/tmp,.,/tmp 
+
+
+set ttyscroll=5
+set t_vb=
+hi Comment  term=bold       ctermfg=Cyan        guifg=#80a0ff
+hi Constant term=NONE       ctermfg=LightGreen  guifg=#ffa0a0
+hi Special  term=bold       ctermfg=DarkGreen   guifg=Orange
+hi Identifier   term=NONE   ctermfg=LightCyan   guifg=#40ffff
+hi Statement    term=bold   ctermfg=Yellow      guifg=#ffff60 gui=bold
+hi PreProc  term=NONE       ctermfg=Magenta     guifg=#ff80ff
+
+hi Normal   term=NONE       ctermbg=Black ctermfg=White guifg=#ffffff          guibg=#000000
+
+set wrap
+set linebreak
+set textwidth=0
+set showbreak=>>>
+
+" http://lucumr.pocoo.org/2010/7/29/sharing-vim-tricks/
+set autochdir
+
