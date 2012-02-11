@@ -1,0 +1,10 @@
+[user]
+	name = Michael Lossos
+	email = mlossos@pobox.com
+
+[merge]
+    external = /home/anon/bin/git-meld.py
+
+[diff]
+    external = /home/anon/bin/git-meld.py
+
