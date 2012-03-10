@@ -1,0 +1,16 @@
+
+alias cp='/bin/cp -i'
+alias rm='/bin/rm -i'
+alias mv='/bin/mv -i'
+# ps with memory usage
+alias psm='ps -A -o pid,user,%mem,sz,vsz,rss,args --sort=pmem,vsz'
+
+alias truecrypt-mount='truecrypt --text --auto-mount=favorites'
+alias initd='sysv-rc-conf'
+
+alias ff='firefox -profilemanager -no-remote'
+
+export MORE=less
+export EDITOR=vi
+set -o vi
+
