@@ -45,3 +45,27 @@ set showbreak=>>>
 " http://lucumr.pocoo.org/2010/7/29/sharing-vim-tricks/
 set autochdir
 
+
+" From /usr/share/vim/vim73/mswin.vim
+" Alternatively could have: source $VIMRUNTIME/mswin.vim
+
+" CTRL-X and SHIFT-Del are Cut
+vnoremap <C-X> "+x
+vnoremap <S-Del> "+x
+
+" CTRL-C and CTRL-Insert are Copy
+vnoremap <C-C> "+y
+vnoremap <C-Insert> "+y
+
+" CTRL-V and SHIFT-Insert are Paste
+map <C-V>		"+gP
+map <S-Insert>		"+gP
+
+cmap <C-V>		<C-R>+
+cmap <S-Insert>		<C-R>+
+
+" Ensure copy paste with ctrl-c/ctrl-v also works in insert mode
+nmap <C-V> "+gP
+imap <C-V> <ESC><C-V>i
+vmap <C-C> "+y
+
