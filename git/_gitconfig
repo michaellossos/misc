@@ -1,0 +1,12 @@
+[user]
+    name = TODO
+    email = TODO
+
+[merge]
+    external = /Users/TODO/bin/git-meld.py
+
+[diff]
+    external = /Users/TODO/bin/git-meld.py
+
+[core]
+	excludesfile = /Users/TODO/.gitignore

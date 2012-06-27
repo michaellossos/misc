@@ -1,0 +1,35 @@
+set -o vi
+
+export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH="$PATH:/Applications/MacVim.app/Contents/MacOS/"
+export PATH="$PATH:/opt/mongodb/bin:/opt/nginx/sbin"
+export PATH="$PATH:/opt/meld/bin"
+#export PATH="$PATH:/Applications/PyCharm.app/Contents/MacOS/"
+export PATH="~/bin:$PATH"
+
+export LS_OPTIONS='--color=auto'
+export CLICOLOR='Yes'
+export LSCOLORS='Exgxfxfxcxdxdxhbadbxbx'
+
+export PS1='\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+
+# MacPorts Installer addition on 2012-05-12_at_17:06:14: adding an appropriate PATH variable for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+source ~/bin/git-completion.bash
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+alias ff='/Applications/Firefox.app/Contents/MacOS/firefox -profilemanager -no-remote'
+alias pycharm='/Applications/PyCharm.app/Contents/MacOS/pycharm > /dev/null 2>&1'
+# append YES or NO
+alias show-hidden='defaults write com.apple.Finder AppleShowAllFiles'
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+# rvm use 1.9.3
+
