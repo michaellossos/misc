@@ -1,0 +1,51 @@
+//  Preferences : Key Bindings - User
+
+[
+    { "keys": ["ctrl+d"], "command": "cut" }
+]
+
+
+// Preferences : File Settings - User
+{
+    // Set to false to disable detection of tabs vs. spaces on load
+    "detect_indentation": false,
+
+    // The number of spaces a tab is considered equal to
+    "tab_size": 4,
+
+    // Set to true to insert spaces when tab is pressed
+    "translate_tabs_to_spaces": true
+}
+
+
+
+
+// Open a .rb (Ruby) file then:
+// Preferences : File Settings - More : Syntax Specific - User
+// You'll be editing Sublime Text 2\Packages\User\Ruby.sublime-settings
+
+{
+    // The number of spaces a tab is considered equal to
+    "tab_size": 2,
+
+    // Set to true to insert spaces when tab is pressed
+    "translate_tabs_to_spaces": true
+}
+
+
+
+
+// Open %USERPROFILE%\.codeintel\config
+// See https://github.com/Kronuz/SublimeCodeIntel
+
+{
+    "Python": {
+        "python": "C:/opt/python/Python27/python.exe",
+        "pythonExtraPaths": []
+    },
+    "Ruby": {
+        "ruby": "C:/opt/ruby/Ruby192/bin/ruby.exe",
+        "rubyExtraPaths": []
+    }
+}
+
